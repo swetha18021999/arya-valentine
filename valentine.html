@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Arya 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 40px 20px;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(20px);
+        padding: 40px;
+        border-radius: 25px;
+        max-width: 720px;
+        width: 100%;
+        max-height: 80vh;
+        overflow-y: auto; /* Enables scroll */
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 52px;
+        color: #c2185b;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #ad1457;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .poem {
+        font-size: 18px;
+        color: #6a1b4d;
+        line-height: 1.9;
+        white-space: pre-line;
+        text-align: left;
+    }
+
+    .signature {
+        margin-top: 35px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 34px;
+        color: #c2185b;
+        text-align: center;
+    }
+
+    /* Soft scrollbar styling */
+    .card::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .card::-webkit-scrollbar-thumb {
+        background: #f48fb1;
+        border-radius: 10px;
+    }
+
+    /* Floating hearts */
+    .heart {
+        position: fixed;
+        font-size: 18px;
+        opacity: 0.45;
+        animation: float 10s infinite linear;
+        pointer-events: none;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(100vh); opacity: 0; }
+        50% { opacity: 0.6; }
+        100% { transform: translateY(-10vh); opacity: 0; }
+    }
+</style>
+</head>
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+</audio>
+
+<div class="card">
+    <h1>For Arya 💖</h1>
+    <div class="subtitle">Never I have Ever… until you.</div>
+
+    <div class="poem">
+
+Never I have Ever
+Felt the need to write
+Write, Write and Write
+To make someone's day bright
+Until I met you that night
+
+Never I have Ever
+Felt a warmth, more than sunshine
+A little above my stomach
+A little below my heart
+Everytime I see you smile
+
+Never I have Ever
+Held my pillows so tight
+Whenever I sleep at night
+For in every pillow, every teddy
+I yearn for the heartbeat
+That makes my heart steady
+
+Never I have ever
+Missed someone so much
+On every birthday, every valentine
+I want to be closer to thine,
+To Laugh, To Smile and To Kiss
+Like a breadcrumb on your lips
+
+Never I have ever
+Loved someone so deep
+So deep till the ocean's reefs
+More than the stars
+Under the night sky,
+I'll always love you, until I Die.
+    </div>
+
+    <div class="signature">
+        Forever yours, Swetha 💗
+    </div>
+</div>
+
+<script>
+// floating hearts
+for (let i = 0; i < 25; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (8 + Math.random() * 5) + "s";
+    heart.style.fontSize = (14 + Math.random() * 15) + "px";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
